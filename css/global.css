@@ -20,6 +20,7 @@
     --solid_white_clr: #FFFFFF;
     --blue_heading_clr: #5562F1;
     --extra_grey_clr: #999999;
+    --bg_grey_clr: #F9F9F9;
 }
 
 @font-face {
@@ -81,7 +82,7 @@ a {
 }
 
 section {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 }
 
 p {

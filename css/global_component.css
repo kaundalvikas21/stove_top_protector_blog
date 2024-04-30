@@ -104,10 +104,9 @@
 }
 
 
-
 /*------------------- product review css -------------------*/
 .global_product_reviews .product_review_container {
-    gap: 4rem;
+    gap: 3rem;
     padding-block: .5rem;
     align-items: center;
 }
