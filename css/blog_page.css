@@ -1,82 +1,125 @@
 /*-------- blog_page_section_1 start --------*/
-.blog_page_sec_1 .inner_list_bar{
-    background-color: var(--secondary_blue_clr);
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5rem;
-    border-radius: 5px;
+.blog_page_sec_1 .inner_list_bar {
+  background-color: var(--secondary_blue_clr);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+  border-radius: 5px;
 }
-.blog_page_sec_1 .blog_sec_1_container{
-    gap: 3rem;
+.blog_page_sec_1 .blog_sec_1_container {
+  gap: 3rem;
 }
-.blog_page_sec_1 .view_all_btn button{
-    width: 6rem;
-    height: 3rem;
-    margin: .4rem;
-}
-
-.blog_page_sec_1 .inner_list_bar ul{
-    list-style: none;
-    gap: 4rem;
-}
-.blog_page_sec_1 .inner_list_bar ul li{
-    color: var(--solid_white_clr);
+.blog_page_sec_1 .view_all_btn button {
+  width: 6rem;
+  height: 3rem;
+  margin: 0.4rem;
 }
 
- .blog_card_wrapper {
-    grid-template-columns: repeat(4,1fr);
-    width: 100%;
-    gap: 1rem;
-    background-color: rgba(241, 7, 7, 0.534);
+.blog_page_sec_1 .inner_list_bar ul {
+  list-style: none;
+  gap: 4rem;
 }
-.ryt_grid {
-    width: 285px;
+.blog_page_sec_1 .inner_list_bar ul li {
+  color: var(--solid_white_clr);
 }
 
+.blog_card_wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 2rem 1rem;
+  background-color: rgba(241, 7, 7, 0.534);
+}
+.grid_item {
+  width: 285px;
+}
+
+.blog_page_sec_1 .pagination_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-top: 2rem;
+  border-top: 1px solid #eaecf0;
+}
+.blog_page_sec_1 .pagination_num {
+  text-align: center;
+}
+.blog_page_sec_1 .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  list-style: none;
+}
+.blog_page_sec_1 .pagination a {
+  color: var(--light_grey_para_clr);
+}
+.blog_page_sec_1 .page_item_btn a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.blog_page_sec_1 .pagination .page_item a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog_page_sec_1 .pagination .page_item:first-child a {
+  background-color: #f9f5ff;
+  border-radius: 8px;
+  color: var(--primary_blue_clr);
+}
+.blog_page_sec_1 .prev_btn .page_item_btn:first-child a {
+  color: var(--light_grey_para_clr);
+}
+.blog_page_sec_1 .next_btn .page_item_btn:last-child a {
+  color: var(--primary_blue_clr);
+}
 /*-------- blog_page_section_1 end --------*/
 
-
 /*-------- blog_page_faq_section_4 start --------*/
-.faq_sec_4{
-    background-color: var(--bg_grey_clr);
+.faq_sec_4 {
+  background-color: var(--bg_grey_clr);
 }
 .faq_sec_4 .faq_container {
-    align-items: center;
-    padding: 12rem 13rem;
-    gap: 4rem;
+  align-items: center;
+  padding: 12rem 13rem;
+  gap: 4rem;
 }
-.faq_sec_4 .faq_container h3{
-    width: 100%;
-    text-align: center;
-    color: var(--primary_heading_clr);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-skip-ink: none;
+.faq_sec_4 .faq_container h3 {
+  width: 100%;
+  text-align: center;
+  color: var(--primary_heading_clr);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
 }
 .faq_sec_4 .inner_faq_accordion_wrapper {
-   gap: 2rem;
+  gap: 2rem;
 }
 .faq_sec_4 .accordion_card {
-    background-color: #F3F3F3;
-    border: 1px solid #DADADA;
-    border-radius: 2px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
+  background-color: #f3f3f3;
+  border: 1px solid #dadada;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
 }
 .faq_sec_4 .inner_content {
-    gap: 1rem;
-    width: 90%;
+  gap: 1rem;
+  width: 90%;
 }
-.faq_sec_4 .inner_content h6{
-    color: var(--sub_heading_clr);
+.faq_sec_4 .inner_content h6 {
+  color: var(--sub_heading_clr);
 }
-.faq_sec_4 .inner_content p{
-    color: var(--light_grey_para_clr);
+.faq_sec_4 .inner_content p {
+  color: var(--light_grey_para_clr);
 }
 
-.faq_sec_4 .faq_container > a{
-    width: 8rem;
-    height: 3rem;
+.faq_sec_4 .faq_container > a {
+  width: 8rem;
+  height: 3rem;
 }
 /*-------- blog_page_faq_section_4 end --------*/

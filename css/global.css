@@ -44,7 +44,7 @@ html {
     scroll-behavior: smooth;
 }
 main{
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .container_1440 {
@@ -190,8 +190,31 @@ h6 {
     font-family: "lato";
 }
 
-
-
+/*-- Breadcrumbs css --*/
+.breadcrumb_container{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.breadcrumb_container .breadcrumb{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: .5rem;
+}
+/* .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    margin: 0 .5rem;
+    color: var(--secondary_blue_clr);
+  } */
+ .breadcrumb_container .breadcrumb .breadcrumb-item:nth-of-type(1) a{
+    color: var(--secondary_blue_clr);
+    font-size: .875rem;
+  }
+ .breadcrumb_container .breadcrumb .breadcrumb-item:nth-of-type(2) a{
+    color: var(--orange_btn_clr);
+    font-size: 14px;
+  }
 
 
 
