@@ -73,7 +73,8 @@
   height: 3rem;
 }
 
-/*----------------- global Guide Introducing gas stove css -----------------*/
+
+/*----------------- global Guide_Introducing_gas_stove css -----------------*/
 .global_protect_gas_stove .inner_content_col {
   border: 1px solid var(--secondary_blue_clr);
   padding: 3rem 5rem;
@@ -81,32 +82,27 @@
   justify-content: space-between;
   gap: 2rem;
 }
-
 .global_protect_gas_stove .right_content {
   justify-content: space-between;
   width: 60%;
 }
-
 .global_protect_gas_stove .right_content h2 {
   color: var(--secondary_blue_clr);
 }
-
 .global_protect_gas_stove .right_content p {
   color: var(--light_grey_para_clr);
 }
-
 .global_protect_gas_stove .right_content > a {
   width: 10rem;
   height: 3rem;
 }
 
-/*------------------- product review css -------------------*/
+/*------------------- global product_review css -------------------*/
 .global_product_reviews .product_review_container {
   gap: 3rem;
   padding-block: 0.5rem;
   align-items: center;
 }
-
 .global_product_reviews .product_review_container h3 {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -114,52 +110,41 @@
   color: var(--primary_heading_clr);
   text-align: center;
 }
-
 .global_product_reviews .review_card_container {
   justify-content: space-between;
 }
-
 .global_product_reviews .review_card h5 {
   color: var(--sub_heading_clr);
 }
-
 .global_product_reviews .review_card:hover h5 {
   color: var(--primary_blue_clr);
 }
-
 .global_product_reviews .review_card > img {
   transition: filter 0.3s ease;
 }
-
 .global_product_reviews .review_card:hover > img {
   filter: brightness(80%);
 }
-
 .global_product_reviews .review_card {
   gap: 1rem;
   width: 32%;
   height: auto;
 }
-
 .global_stars_rating {
   gap: 0.5rem;
 }
-
 .global_rating {
   color: var(--extra_grey_clr);
 }
-
 .global_product_reviews .bottom_content {
   gap: 1rem;
   padding-bottom: 0.5rem;
 }
-
 .global_product_reviews .profile_info {
   width: 95%;
   align-items: center;
   justify-content: space-between;
 }
-
 .global_product_reviews .user,
 .date_info,
 .shares_view {
@@ -167,29 +152,24 @@
   gap: 0.5rem;
   /* white-space: nowrap; */
 }
-
 .global_product_reviews .profile_info .user > span {
   color: var(--sub_heading_clr);
   font-size: 0.875rem;
   font-weight: 400;
 }
-
 .global_product_reviews .profile_info .user .blue_name {
   color: var(--primary_blue_clr);
 }
-
 .global_product_reviews .date_info::before {
   content: "";
   width: 18px;
   height: 0.52px;
   background-color: #66666666;
 }
-
 .global_product_reviews .date_info > span {
   color: var(--light_grey_para_clr);
   font-size: 0.875rem;
 }
-
 .global_product_reviews .shares_view::before {
   content: "";
   width: 6.61px;
@@ -197,110 +177,90 @@
   background-color: #66666666;
   border-radius: 50%;
 }
-
 .global_product_reviews .shares_view > span {
   color: var(--light_grey_para_clr);
 }
-
 .global_product_reviews .bottom_content p {
   color: var(--light_grey_para_clr);
 }
-
 .global_product_reviews .review_card a {
   width: 10rem;
   height: 3rem;
 }
-
 .global_product_reviews .product_review_container > a {
   width: 11rem;
   height: 3rem;
 }
 
-/*-------------- Recommended products & reviews css --------------*/
+/*-------------- global Recommended_products_nd_reviews css --------------*/
 .global_recomm_prodct_reviews .recomm_prodct_container {
   gap: 3rem;
 }
-
 .global_recomm_prodct_reviews .recomm_prodct_container h3 {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   color: var(--primary_heading_clr);
 }
-
 .global_recomm_prodct_reviews .inner_col_container {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
-
 .global_recomm_prodct_reviews .l_content {
   width: 50%;
   gap: 1rem;
 }
-
 .global_recomm_prodct_reviews .l_content .brand_nd_product {
   width: 19rem;
   justify-content: space-between;
   gap: 1rem;
 }
-
 .global_recomm_prodct_reviews .brand_nd_product .brand_name,
 .global_recomm_prodct_reviews .brand_nd_product .product_name {
   align-items: center;
   color: var(--secondary_heading_clr);
   gap: 0.5rem;
 }
-
 .global_recomm_prodct_reviews .l_content p {
   color: var(--light_grey_para_clr);
 }
-
 .global_recomm_prodct_reviews .price_container {
   gap: 0.5rem;
   font-size: 1.25rem;
 }
-
 .global_recomm_prodct_reviews .price_container .cross_price {
   position: relative;
   color: #5562f180;
 }
-
 .global_recomm_prodct_reviews .price_container .cross_price::after {
   content: url("/assets/cross_line3.svg");
   position: absolute;
   left: 0;
 }
-
 .global_recomm_prodct_reviews .price_container :last-child {
   color: var(--secondary_blue_clr);
 }
-
 .global_recomm_prodct_reviews .two_btns {
   gap: 2rem;
 }
-
 .global_recomm_prodct_reviews .two_btns :nth-child(1) {
   width: 9rem;
   height: 3rem;
 }
-
 .global_recomm_prodct_reviews .two_btns :nth-child(2) {
   width: 10rem;
   height: 3rem;
 }
-
 .global_recomm_prodct_reviews .drop_down_container .read_pros,
 .global_recomm_prodct_reviews .drop_down_container .read_cons {
   align-items: center;
   width: 90%;
   justify-content: space-between;
 }
-
 .global_recomm_prodct_reviews .drop_down_container {
   border-bottom: 1px solid #0000001a;
   padding-bottom: 1.125rem;
 }
-
 .global_recomm_prodct_reviews .drop_down_container .read_pros > li,
 .global_recomm_prodct_reviews .drop_down_container .read_cons > li {
   color: var(--blue_heading_clr);
@@ -313,27 +273,23 @@
   list-style: none;
 }
 
-/*----------- all about use stove your kitchen css ------------*/
+/*----------- global all_about_use_stove_kitchen css ------------*/
 .global_about_ur_stove .about_ur_stove_container {
   justify-content: space-between;
   padding-block: 0.5rem;
   gap: 2rem;
 }
-
 .global_about_ur_stove .l_content {
   width: 50%;
   gap: 1rem;
   justify-content: space-between;
 }
-
 .global_about_ur_stove .l_content h2 {
   color: var(--sub_heading_clr);
 }
-
 .global_about_ur_stove .l_content p {
   color: var(--light_grey_para_clr);
 }
-
 .global_about_ur_stove .subscribe_bar {
   width: 90%;
   height: 3rem;
@@ -343,15 +299,57 @@
   align-items: center;
   border-right: none;
 }
-
 .global_about_ur_stove .subscribe_bar form > input {
   border: none;
   outline: none;
   padding: 0.5em;
   color: var(--sub_heading_clr);
 }
-
 .global_about_ur_stove .subscribe_bar > a {
   width: 8rem;
   height: 3rem;
 }
+
+/*-------- global_faq_sec start --------*/
+.faq_sec {
+  background-color: var(--bg_grey_clr);
+}
+.faq_sec .faq_container {
+  align-items: center;
+  padding: 12rem 13rem;
+  gap: 4rem;
+}
+.faq_sec .faq_container h3 {
+  width: 100%;
+  text-align: center;
+  color: var(--primary_heading_clr);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
+}
+.faq_sec .inner_faq_accordion_wrapper {
+  gap: 2rem;
+}
+.faq_sec .accordion_card {
+  background-color: #f3f3f3;
+  border: 1px solid #dadada;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.faq_sec .inner_content {
+  gap: 1rem;
+  width: 90%;
+}
+.faq_sec .inner_content h6 {
+  color: var(--sub_heading_clr);
+}
+.faq_sec .inner_content p {
+  color: var(--light_grey_para_clr);
+}
+.faq_sec .faq_container > a {
+  width: 8rem;
+  height: 3rem;
+}
+/*-------- global_faq_sec end --------*/
