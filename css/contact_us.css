@@ -1,0 +1,20 @@
+.breadcrumb_container .breadcrumb .breadcrumb-item  a {
+    color: var(--sub_heading_clr);
+    font-size: 0.875rem;
+}
+.contact_us_sec .contact_us_container{
+   gap: 3rem; 
+   padding-inline: 10rem;
+}
+.contact_us_sec .heading_col{
+    align-items: center;
+    gap: 1.25rem;
+}
+.contact_us_sec .heading_col h1{
+    color: var(--sub_heading_clr);
+    text-align: center;
+}
+.contact_us_sec .heading_col p{
+    color: var(--light_grey_para_clr);
+    text-align: center;
+}
