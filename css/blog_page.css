@@ -28,7 +28,7 @@
 .blog_page_sec_1 .blog_card_wrapper {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  gap: 2rem 1rem;
+  gap: 3rem 1rem;
   padding-block: 0.5rem;
 }
 
