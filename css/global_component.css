@@ -73,7 +73,6 @@
   height: 3rem;
 }
 
-
 /*----------------- global Guide_Introducing_gas_stove css -----------------*/
 .global_protect_gas_stove .inner_content_col {
   border: 1px solid var(--secondary_blue_clr);
@@ -353,3 +352,75 @@
   height: 3rem;
 }
 /*-------- global_faq_sec end --------*/
+
+/*------ menu_off_canvas -------*/
+.menu_off_canvas {
+  width: 468px;
+}
+.menu_off_canvas .menu_inner_wrapper {
+  padding: 2rem;
+  gap: 2rem;
+}
+.menu_off_canvas .heading_row {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menu_off_canvas .heading_row img {
+  width: 26px;
+  height: 26px;
+}
+.menu_off_canvas .heading_row h5 {
+  color: var(--orange_btn_clr);
+  font-weight: 400;
+}
+.menu_off_canvas .lists_stove_protect ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.menu_off_canvas .lists_stove_protect ul li {
+  list-style: none;
+  color: #000000;
+}
+.menu_off_canvas .lists_stove_protect ul li a {
+  color: #000000;
+}
+.menu_off_canvas .lists_stove_protect ul li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menu_off_canvas .lists_stove_protect ul li:last-child img {
+  width: 24px;
+  height: 24px;
+}
+
+/*----- model_rating -----*/
+.model_rating {
+  width: 500px;
+  background-color: #fff8f5;
+}
+.model_rating .model_wrapper {
+  max-width: 200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 3.5rem;
+}
+.model_rating .model_content {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.model_rating .model_content h6 {
+  color: var(--secondary_blue_clr);
+  font-weight: 400;
+}
+.model_rating .model_content span {
+  color: var(--light_grey_para_clr);
+  font-weight: 400;
+}
+.model_rating .social_links_model {
+  align-items: center;
+  gap: 0.5rem;
+}
