@@ -5,6 +5,7 @@
   justify-content: flex-start;
   gap: 5rem;
   border-radius: 5px;
+  overflow-x: auto;
 }
 .blog_page_sec_1 .blog_sec_1_container {
   gap: 3rem;

@@ -21,7 +21,6 @@
   --blue_heading_clr: #5562f1;
   --extra_grey_clr: #999999;
   --bg_grey_clr: #f9f9f9;
-
 }
 
 @font-face {
@@ -51,7 +50,7 @@ main {
 .container_1440 {
   max-width: 1440px;
   margin-inline: auto;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
 }
 
 .w_auto {
@@ -199,6 +198,78 @@ h6 {
   font-weight: 700;
   font-family: "lato";
 }
+
+/* menu_off_canvas_css */
+.menu_off_canvas {
+  width: 468px;
+  height: 100vh;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--solid_white_clr);
+  padding: 4rem 3rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.menu_off_canvas.open {
+  transform: translateX(0);
+}
+
+.menu_off_canvas .menu_inner_wrapper {
+  gap: 2rem;
+}
+.menu_off_canvas .heading_row {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menu_off_canvas .heading_row img {
+  width: 26px;
+  height: 26px;
+}
+.menu_off_canvas .heading_row h5 {
+  color: var(--orange_btn_clr);
+  font-weight: 400;
+}
+.menu_off_canvas .lists_stove_protect ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.menu_off_canvas .lists_stove_protect ul li {
+  list-style: none;
+  color: #000000;
+}
+.menu_off_canvas .lists_stove_protect ul li a {
+  color: #000000;
+  font-size: 1.25rem;
+}
+.menu_off_canvas .lists_stove_protect ul li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menu_off_canvas .lists_stove_protect ul li:last-child img {
+  width: 24px;
+  height: 24px;
+}
+
+.overlay{
+  position: fixed;
+  min-height: 100vh;
+  background-color: rgba(48, 48, 48, 0.192);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+.overlay.open_overlay{
+  display: block;
+}
+
 /*--------------- Header css end ------------------*/
 
 /*-- global_Breadcrumbs css --*/
@@ -258,7 +329,7 @@ h6 {
   filter: brightness(0.85);
 }
 
-.global_blog_posts  .inner_content {
+.global_blog_posts .inner_content {
   align-items: flex-start;
   gap: 1rem;
 }
@@ -285,7 +356,6 @@ h6 {
 .global_blog_posts .blog_author_info h6,
 .global_blog_posts .blog_author_info span {
   color: var(--secondary_blue_clr);
- 
 }
 .global_blog_posts .blog_author_info span {
   position: relative;
@@ -360,7 +430,6 @@ h6 {
   margin-top: 4rem;
 }
 /*---------- global_blog_posts end----------*/
-
 
 /*----------------- global Guide_Introducing_gas_stove css -----------------*/
 .global_protect_gas_stove .inner_content_col {
@@ -599,7 +668,6 @@ h6 {
 }
 .faq_sec .faq_container {
   align-items: center;
-  padding: 12rem 13rem;
   gap: 4rem;
 }
 .faq_sec .faq_container h3 {
@@ -612,6 +680,9 @@ h6 {
 }
 .faq_sec .inner_faq_accordion_wrapper {
   gap: 2rem;
+  max-width: 920px;
+  align-items: center;
+  margin-inline: auto;
 }
 .faq_sec .accordion_card {
   background-color: #f3f3f3;
@@ -701,7 +772,11 @@ footer > .inner_container .social_icons_container {
 }
 
 footer .social_icons_container a:hover path {
-  fill: color-mix(in hsl shorter hue, rgba(237, 228, 109, 0.909) 100%, rgba(236, 226, 95, 0.963) 100%);
+  fill: color-mix(
+    in hsl shorter hue,
+    rgba(237, 228, 109, 0.909) 100%,
+    rgba(236, 226, 95, 0.963) 100%
+  );
 }
 
 footer > .divider {
@@ -718,4 +793,3 @@ footer > .copyright_col {
   padding-block: 3rem;
   color: var(--solid_white_clr);
 }
-

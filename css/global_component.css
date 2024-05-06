@@ -354,11 +354,10 @@
 /*-------- global_faq_sec end --------*/
 
 /*------ menu_off_canvas -------*/
-.menu_off_canvas {
+/* .menu_off_canvas {
   width: 468px;
-}
-.menu_off_canvas .menu_inner_wrapper {
-  padding: 2rem;
+} */
+/* .menu_off_canvas .menu_inner_wrapper {
   gap: 2rem;
 }
 .menu_off_canvas .heading_row {
@@ -385,6 +384,7 @@
 }
 .menu_off_canvas .lists_stove_protect ul li a {
   color: #000000;
+  font-size: 1.25rem;
 }
 .menu_off_canvas .lists_stove_protect ul li:last-child {
   display: flex;
@@ -394,7 +394,7 @@
 .menu_off_canvas .lists_stove_protect ul li:last-child img {
   width: 24px;
   height: 24px;
-}
+} */
 
 /*----- model_rating -----*/
 .model_rating {
