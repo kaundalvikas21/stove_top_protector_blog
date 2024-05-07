@@ -487,6 +487,9 @@ td {
 .single_blg_pge_sec_3 tr:nth-child(odd) {
   background-color: #f6f6f6;
 }
+.single_blg_pge_sec_3 tr:nth-child(2):hover {
+  background-color: #edeaea;
+}
 .single_blg_pge_sec_3 .price {
   color: var(--secondary_blue_clr);
   font-size: 1.25rem;

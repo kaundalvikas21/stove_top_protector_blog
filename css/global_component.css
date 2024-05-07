@@ -354,10 +354,10 @@
 /*-------- global_faq_sec end --------*/
 
 /*------ menu_off_canvas -------*/
-/* .menu_off_canvas {
+.menu_off_canvas {
   width: 468px;
-} */
-/* .menu_off_canvas .menu_inner_wrapper {
+}
+.menu_off_canvas .menu_inner_wrapper {
   gap: 2rem;
 }
 .menu_off_canvas .heading_row {
@@ -394,12 +394,23 @@
 .menu_off_canvas .lists_stove_protect ul li:last-child img {
   width: 24px;
   height: 24px;
-} */
+}
 
 /*----- model_rating -----*/
 .model_rating {
   width: 500px;
   background-color: #fff8f5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.model_rating.open_rating_model{
+  opacity: 1;
+  visibility: visible;
 }
 .model_rating .model_wrapper {
   max-width: 200px;

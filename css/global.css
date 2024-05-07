@@ -699,9 +699,16 @@ h6 {
 .faq_sec .inner_content h6 {
   color: var(--sub_heading_clr);
 }
-.faq_sec .inner_content p {
+.faq_sec .inner_content .faq_para p {
   color: var(--light_grey_para_clr);
 }
+/* .faq_sec .faq_para{
+  max-height: 0;
+  overflow: hidden;
+} */
+/* .faq_sec .accordion_card.active .faq_para{
+  max-height: 300px;
+} */
 .faq_sec .faq_container > a {
   width: 8rem;
   height: 3rem;
@@ -792,4 +799,46 @@ footer > .copyright_col {
   align-items: center;
   padding-block: 3rem;
   color: var(--solid_white_clr);
+}
+
+
+/*----- model_rating -----*/
+.model_rating {
+  width: 500px;
+  background-color: #fff8f5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+.model_rating.open_rating_model{
+  opacity: 1;
+  visibility: visible;
+}
+.model_rating .model_wrapper {
+  max-width: 200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 3.5rem;
+}
+.model_rating .model_content {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.model_rating .model_content h6 {
+  color: var(--secondary_blue_clr);
+  font-weight: 400;
+}
+.model_rating .model_content span {
+  color: var(--light_grey_para_clr);
+  font-weight: 400;
+}
+.model_rating .social_links_model {
+  align-items: center;
+  gap: 0.5rem;
 }

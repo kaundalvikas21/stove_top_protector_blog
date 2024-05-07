@@ -1,6 +1,7 @@
 /*-------- hero_section_1 start --------*/
 .index_hero_section_1 .hero_sec_container {
   height: 853px;
+  /* height: 100%; */
   display: grid;
   grid-gap: 1rem;
   grid-template-areas:
