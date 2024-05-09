@@ -1,4 +1,9 @@
 /*-------- blog_page_section_1 start --------*/
+
+.blog_page_sec_1 .blog_sec_1_container h1{
+text-align: center;
+color: var(--sub_heading_clr);
+}
 .blog_page_sec_1 .inner_list_bar {
   background-color: var(--secondary_blue_clr);
   align-items: center;

@@ -1,7 +1,7 @@
 /*-------- hero_section_1 start --------*/
 .index_hero_section_1 .hero_sec_container {
-  height: 853px;
-  /* height: 100%; */
+  min-height: 853px;
+  height: 100%;
   display: grid;
   grid-gap: 1rem;
   grid-template-areas:
@@ -58,7 +58,14 @@
   height: 100%;
   gap: 0.5rem;
 }
-
+.index_hero_section_1 .overlay_txt_wrap > span.left_span{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.index_hero_section_1 .overlay_txt_wrap > span.ryt_span{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .index_hero_section_1 .col_1_txt {
   background-color: var(--orange_btn_clr);
   width: 66px;
@@ -69,9 +76,11 @@
 .index_hero_section_1 .hero_author_info {
   align-items: center;
   gap: 1rem;
+  color: var(--solid_white_clr);
 }
 
-.index_hero_section_1 .hero_author_info h6 {
+.index_hero_section_1 .hero_author_info span:nth-child(1) {
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -124,8 +133,9 @@
   filter: brightness(0.5);
 }
 
-.index_section_2 .inner_txt_wrapper .txt_ovr_img h4 {
+.index_section_2 .inner_txt_wrapper .txt_ovr_img span {
   color: var(--solid_white_clr);
+  font-size: 1.5rem;
   font-weight: 400;
 }
 

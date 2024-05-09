@@ -211,6 +211,7 @@ h6 {
   padding: 4rem 3rem;
   transform: translateX(100%);
   transition: transform 0.3s ease-out;
+  z-index: 1003;
 }
 
 .menu_off_canvas.open {
@@ -256,17 +257,17 @@ h6 {
   height: 24px;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   min-height: 100vh;
   background-color: rgba(48, 48, 48, 0.192);
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 1001;
   display: none;
 }
-.overlay.open_overlay{
+.overlay.open_overlay {
   display: block;
 }
 
@@ -353,11 +354,14 @@ h6 {
   left: -15%;
 }
 
-.global_blog_posts .blog_author_info h6,
+.global_blog_posts .blog_author_info .name{
+  font-size: 1rem;
+  font-weight: 600;
+}
 .global_blog_posts .blog_author_info span {
   color: var(--secondary_blue_clr);
 }
-.global_blog_posts .blog_author_info span {
+.global_blog_posts .blog_author_info span.date {
   position: relative;
   display: inline-block;
   margin-left: 1.25rem;
@@ -369,14 +373,22 @@ h6 {
   justify-content: space-between;
 }
 
-.global_blog_posts .inner_cont_heading h4,
-.global_blog_posts .inner_cont_heading h5 {
+.global_blog_posts .inner_cont_heading > span.l_span,
+.global_blog_posts .inner_cont_heading > span.r_span {
   color: var(--sub_heading_clr);
   text-align: left;
+  font-weight: 600;
 }
 
-.global_blog_posts .grid_blog_card:hover h4,
-.global_blog_posts .grid_blog_card:hover h5 {
+.global_blog_posts .inner_cont_heading > span.l_span {
+  font-size: 1.5rem;
+}
+.global_blog_posts .inner_cont_heading > span.r_span {
+  font-size: 1.25rem;
+}
+
+.global_blog_posts .grid_blog_card:hover span.l_span,
+.global_blog_posts .grid_blog_card:hover span.r_span {
   color: var(--primary_blue_clr);
 }
 .global_blog_posts .inner_cont_heading > a {
@@ -470,10 +482,12 @@ h6 {
 .global_product_reviews .review_card_container {
   justify-content: space-between;
 }
-.global_product_reviews .review_card h5 {
+.global_product_reviews .review_card span.heading_span {
   color: var(--sub_heading_clr);
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-.global_product_reviews .review_card:hover h5 {
+.global_product_reviews .review_card:hover span.heading_span {
   color: var(--primary_blue_clr);
 }
 .global_product_reviews .review_card > img {
@@ -650,11 +664,11 @@ h6 {
   border-radius: 10px;
   align-items: center;
   border-right: none;
+  padding-left: 1rem;
 }
 .global_about_ur_stove .subscribe_bar form > input {
   border: none;
   outline: none;
-  padding: 0.5em;
   color: var(--sub_heading_clr);
 }
 .global_about_ur_stove .subscribe_bar > a {
@@ -696,8 +710,10 @@ h6 {
   gap: 1rem;
   width: 90%;
 }
-.faq_sec .inner_content h6 {
+.faq_sec .inner_content span {
   color: var(--sub_heading_clr);
+  font-size: 1rem;
+  font-weight: 600;
 }
 .faq_sec .inner_content .faq_para p {
   color: var(--light_grey_para_clr);
@@ -801,7 +817,6 @@ footer > .copyright_col {
   color: var(--solid_white_clr);
 }
 
-
 /*----- model_rating -----*/
 .model_rating {
   width: 500px;
@@ -813,9 +828,9 @@ footer > .copyright_col {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
+  z-index: 1002;
 }
-.model_rating.open_rating_model{
+.model_rating.open_rating_model {
   opacity: 1;
   visibility: visible;
 }

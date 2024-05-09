@@ -42,9 +42,11 @@
   padding-right: 1rem;
   gap: 3.5rem;
 }
-.single_blg_pge_sec_2 .l_col_wrapper h4 {
+.single_blg_pge_sec_2 .l_col_wrapper span {
   color: var(--secondary_heading_clr);
   position: relative;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .heading_summary {
   display: flex;
@@ -272,9 +274,11 @@
   .inner_col_3
   .review_card
   .name_stars_wrap
-  h6 {
+  span {
   color: #232323;
   padding-bottom: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .single_blg_pge_sec_2 .r_col_wrapper .review_card .review_btn {
   width: 8rem;
@@ -299,8 +303,10 @@
   color: var(--sub_heading_clr);
   font-weight: 700;
 }
-.single_blg_pge_sec_2 .r_col_wrapper .inner_col_4 .inner_content h5 {
+.single_blg_pge_sec_2 .r_col_wrapper .inner_col_4 .inner_content span {
   color: var(--sub_heading_clr);
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .single_blg_pge_sec_2 .r_col_wrapper .inner_col_4 .accordion_card {
   background: none;
@@ -315,8 +321,10 @@
 .single_blg_pge_sec_2 .r_col_wrapper .comments_wrapper {
   gap: 3rem;
 }
-.single_blg_pge_sec_2 .r_col_wrapper .comments_wrapper .comments_heading h5 {
+.single_blg_pge_sec_2 .r_col_wrapper .comments_wrapper .comments_heading > span{
   color: var(--secondary_heading_clr);
+  font-size: 1.25rem;
+    font-weight: 600;
 }
 .single_blg_pge_sec_2 .r_col_wrapper .comments_wrapper .comments_heading {
   display: flex;
@@ -349,8 +357,10 @@
   align-items: center;
   justify-content: space-between;
 }
-.single_blg_pge_sec_2 .comments_wrapper .user_name_date h5 {
+.single_blg_pge_sec_2 .comments_wrapper .user_name_date span:nth-of-type(1)  {
   color: var(--secondary_heading_clr);
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .single_blg_pge_sec_2 .comments_wrapper .user_name_date span {
   color: #878787;
@@ -391,9 +401,10 @@
 .single_blg_pge_sec_2 .leave_reply_wrapper {
   gap: 1.5rem;
 }
-.single_blg_pge_sec_2 .leave_reply_wrapper h5 {
+.single_blg_pge_sec_2 .leave_reply_wrapper span {
   color: var(--secondary_heading_clr);
   font-weight: 500;
+  font-size: 1.25rem;
 }
 .single_blg_pge_sec_2 .reply_heading {
   display: flex;
@@ -528,8 +539,10 @@ td {
   gap: 0.625rem;
   align-items: flex-start;
 }
-.single_blg_pge_sec_4 .user_info h6 {
+.single_blg_pge_sec_4 .user_info .auth_name {
   color: var(--secondary_heading_clr);
+  font-size: 1rem;
+  font-weight: 600;
 }
 .single_blg_pge_sec_4 .user_info span {
   color: var(--sub_heading_clr);
