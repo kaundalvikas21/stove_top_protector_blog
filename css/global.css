@@ -164,6 +164,10 @@ h6 {
 /* global_used_stars_rating */
 
 /*--------------- Header css start ------------------*/
+.mobile_header {
+  display: none;
+}
+
 .header {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -354,7 +358,7 @@ h6 {
   left: -15%;
 }
 
-.global_blog_posts .blog_author_info .name{
+.global_blog_posts .blog_author_info .name {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -661,7 +665,6 @@ h6 {
   height: 3rem;
   justify-content: space-between;
   border: 1px solid #bcbcbc;
-  border-radius: 10px;
   align-items: center;
   border-right: none;
   padding-left: 1rem;
@@ -775,7 +778,6 @@ footer > .inner_container .col_1 p {
 
 footer > .inner_container .li_column li {
   list-style: none;
-  font-size: 1rem;
   padding-block: 0.5rem;
 }
 
@@ -815,6 +817,9 @@ footer > .copyright_col {
   align-items: center;
   padding-block: 3rem;
   color: var(--solid_white_clr);
+}
+.mobile_footer {
+  display: none;
 }
 
 /*----- model_rating -----*/
@@ -856,4 +861,179 @@ footer > .copyright_col {
 .model_rating .social_links_model {
   align-items: center;
   gap: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    margin-bottom: 4rem;
+  }
+  .container_1440 {
+    padding: 1rem 1rem;
+  }
+  p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  /* h5 {
+    font-size: 1rem;
+    font-weight: 600;
+  } */
+
+  h6 {
+    font-size: 0.5rem;
+    font-weight: 600;
+  }
+
+  header .header_container {
+    display: none;
+  }
+
+  .mobile_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    position: relative;
+  }
+  .mobile_header h5 {
+    color: var(--secondary_blue_clr);
+    font-weight: 700;
+    font-family: "lato";
+  }
+
+  /* global_component index_section_3 start */
+  .global_blog_posts .inner_blog_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .global_blog_posts .inner_blog_wrapper .grid_blog_card:nth-of-type(1) {
+    margin-bottom: 2rem;
+  }
+  .global_blog_posts .grid_blog_card {
+    width: 100%;
+  }
+  .global_blog_posts .grid_blog_card img {
+    width: 100%;
+  }
+  .global_blog_posts .recent_blog_container > a {
+    margin-top: 0;
+  }
+
+  /* global_component  index_section_4 start */
+  .global_protect_gas_stove .inner_content_col {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+  .global_protect_gas_stove .right_content {
+    width: 100%;
+    gap: 1rem;
+  }
+  /* global_component (product_reviews_card) index_section_5  */
+  .global_product_reviews .review_card_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .global_product_reviews .review_card {
+    width: 100%;
+  }
+  .global_product_reviews .profile_info {
+    width: 100%;
+  }
+
+  /* global_component (Recommended_products) index_section_6 */
+  .global_recomm_prodct_reviews .recomm_prodct_container {
+    align-items: center;
+  }
+  .global_recomm_prodct_reviews .inner_col_container {
+    flex-direction: column-reverse;
+  }
+  .global_recomm_prodct_reviews .l_content {
+    width: 100%;
+  }
+  .global_recomm_prodct_reviews .two_btns {
+    justify-content: space-between;
+  }
+
+  /* global_component (all about_use_stove) index_section_7  */
+  .global_about_ur_stove .about_ur_stove_container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .global_about_ur_stove .l_content,
+  .global_about_ur_stove .subscribe_bar {
+    width: 100%;
+  }
+
+  footer > .inner_container {
+    display: none;
+  }
+
+  .mobile_footer {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .mobile_footer .col_1 {
+    gap: 1rem;
+  }
+  .mobile_footer .col_1 h5 {
+    color: var(--solid_white_clr);
+    font-weight: 500;
+  }
+  .mobile_footer .col_1 p {
+    color: var(--solid_white_clr);
+    font-size: 0.75rem;
+  }
+  .mobile_footer .social_icons_container svg {
+    width: 18px;
+    height: 18px;
+  }
+  .mobile_footer .social_icons_container {
+    gap: 1rem;
+  }
+
+  .mobile_footer .inner_li_columns_wrap {
+    gap: 1rem;
+  }
+  .mobile_footer .li_column ul li {
+    list-style: none;
+    padding-block: 0.5rem;
+  }
+  .mobile_footer .li_column a {
+    color: var(--solid_white_clr);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+  .mobile_footer .inner_li_columns_wrap .col_1 {
+    border-bottom: 1px solid var(--solid_white_clr);
+    padding-bottom: 1rem;
+  }
+  .accordion_footer {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .accordion_footer img {
+    width: 20px;
+    height: 20px;
+  }
 }

@@ -26,11 +26,11 @@ function overlay_remove() {
   overlay.removeEventListener("click", overlay_remove);
   // document.body.style.overflow = "";
 }
-// overlay.addEventListener("click", () => {
-//   menu_off_canvas.classList.remove("open");
-//   model_rating.classList.remove("open_rating_model");
-//   overlay_remove();
-// });
+overlay.addEventListener("click", () => {
+  menu_off_canvas.classList.remove("open");
+  model_rating.classList.remove("open_rating_model");
+  overlay_remove();
+});
 
 // rating_article
 const rate_article = document.querySelector(".rate_article");
@@ -49,8 +49,3 @@ accordion_card.addEventListener("click", () => {
   console.log("hello");
 });
 
-overlay.addEventListener("click", () => {
-  menu_off_canvas.classList.remove("open");
-  model_rating.classList.remove("open_rating_model");
-  overlay_remove();
-});
