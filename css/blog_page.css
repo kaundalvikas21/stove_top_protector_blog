@@ -1,5 +1,7 @@
 /*-------- blog_page_section_1 start --------*/
-
+.mobile_filter {
+  display: none;
+}
 .blog_page_sec_1 .blog_sec_1_container h1{
 text-align: center;
 color: var(--sub_heading_clr);
@@ -84,3 +86,26 @@ color: var(--sub_heading_clr);
   color: var(--primary_blue_clr);
 }
 /*-------- blog_page_section_1 end --------*/
+
+
+
+@media screen and (max-width: 480px) {
+  .blog_page_sec_1 .blog_card_wrapper {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .blog_page_sec_1 .inner_list_bar{
+    display: none;
+  }
+  .mobile_filter{
+    display: block;
+  }
+  .mobile_filter .filter_btn{
+    width: 88px;
+    height: 36px;
+    justify-content: space-between;
+    padding: .5rem;
+  }
+  .mobile_filter .filter_btn span{
+    color: var(--primary_blue_clr);
+  }
+}
