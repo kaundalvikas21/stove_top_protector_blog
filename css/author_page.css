@@ -196,3 +196,26 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+
+@media screen and (max-width: 480px) {
+
+  .author_pg_sec_2 .blog_card_wrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .author_pg_sec_2 .heading_wrap span::before {
+  left: 19%;
+  }
+  .author_pg_sec_3 .heading_wrap span::before {
+  left: 40%;
+  }
+  .author_pg_sec_3 .inner_cont_wrapper{
+    flex-direction: column; 
+  }
+  .author_pg_sec_3 .inner_cont_wrapper .l_col{
+    width: 100%;
+  }
+  .author_pg_sec_3 .inner_cont_wrapper .r_col{
+    width: 100%;
+  }
+}

@@ -50,7 +50,6 @@
   position: relative;
 }
 .index_hero_section_1 .overlay_txt_wrap {
-  color: var(--solid_white_clr);
   padding: 2rem;
   justify-content: flex-end;
   align-items: baseline;
@@ -60,19 +59,21 @@
   bottom: 0;
   transform: translate(0px, 10px);
 }
-.index_hero_section_1 .overlay_txt_wrap > span.left_span {
+.index_hero_section_1 .overlay_txt_wrap > span.left_span a{
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--solid_white_clr);
 }
-.index_hero_section_1 .overlay_txt_wrap > span.ryt_span {
+.index_hero_section_1 .overlay_txt_wrap > span.ryt_span a{
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--solid_white_clr);
 }
 .index_hero_section_1 .col_1_txt {
   background-color: var(--orange_btn_clr);
   width: 66px;
   height: 30px;
-  cursor: default;
+  color: var(--solid_white_clr);
 }
 
 .index_hero_section_1 .hero_author_info {
@@ -81,9 +82,10 @@
   color: var(--solid_white_clr);
 }
 
-.index_hero_section_1 .hero_author_info span:nth-child(1) {
+.index_hero_section_1 .hero_author_info span:nth-child(1) a {
   font-size: 1rem;
   font-weight: 400;
+  color: var(--solid_white_clr);
 }
 
 /*-------- hero_section_1 end --------*/
@@ -118,11 +120,13 @@
   filter: brightness(0.5);
 }
 .index_section_2 .inner_txt_wrapper .txt_ovr_img span {
-  color: var(--solid_white_clr);
   font-size: 1.5rem;
   font-weight: 400;
   position: absolute;
   transform: translate(0, 50%);
+}
+.index_section_2 .inner_txt_wrapper .txt_ovr_img a{
+  color: var(--solid_white_clr);
 }
 
 /*-------- index_section_2 end --------*/
@@ -147,10 +151,10 @@
   .index_hero_section_1 .overlay_txt_wrap {
     padding: 0 1rem 1.5rem 1rem;
   }
-  .index_hero_section_1 .overlay_txt_wrap > span.ryt_span {
+  .index_hero_section_1 .overlay_txt_wrap > span.ryt_span a{
     font-size: 0.875rem;
   }
-  .index_hero_section_1 .overlay_txt_wrap > span.left_span {
+  .index_hero_section_1 .overlay_txt_wrap > span.left_span a{
     font-size: 1.25rem;
   }
   .index_section_2 .inner_txt_wrapper{

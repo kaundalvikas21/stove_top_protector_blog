@@ -82,7 +82,7 @@ a {
 }
 
 section {
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 p {
@@ -362,7 +362,7 @@ h6 {
   font-size: 1rem;
   font-weight: 600;
 }
-.global_blog_posts .blog_author_info span {
+.global_blog_posts .blog_author_info span a{
   color: var(--secondary_blue_clr);
 }
 .global_blog_posts .blog_author_info span.date {
@@ -896,14 +896,18 @@ footer > .copyright_col {
     font-weight: 600;
   }
 
-  /* h5 {
+  h5 {
     font-size: 1rem;
     font-weight: 600;
-  } */
+  }
 
   h6 {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     font-weight: 600;
+  }
+
+  .breadcrumb_container {
+  margin-bottom: 3rem;
   }
 
   header .header_container {

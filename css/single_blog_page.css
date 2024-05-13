@@ -303,11 +303,6 @@
   color: var(--sub_heading_clr);
   font-weight: 700;
 }
-.single_blg_pge_sec_2 .r_col_wrapper .inner_col_4 .inner_content span {
-  color: var(--sub_heading_clr);
-  font-size: 1.25rem;
-  font-weight: 600;
-}
 .single_blg_pge_sec_2 .r_col_wrapper .inner_col_4 .accordion_card {
   background: none;
   border: none;
@@ -629,4 +624,82 @@ td {
 }
 .single_blg_pge_sec_6 .need_help span{
   color: var(--sub_heading_clr);
+}
+
+@media screen and (max-width: 480px) {
+  .single_blg_pge_sec_2 .sec_2_container{
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .single_blg_pge_sec_2 .r_col_wrapper{
+    width: 100%;
+    gap: 2rem;
+  }
+  .single_blg_pge_sec_2 .r_col_wrapper .inner_col_1{
+    padding-bottom: 2rem;
+  }
+  .single_blg_pge_sec_2 .r_col_wrapper .comments_wrapper {
+  gap: 2rem;
+}
+.single_blg_pge_sec_2 .r_col_wrapper .inner_col_3{
+  flex-direction: column;
+}
+.single_blg_pge_sec_2 .r_col_wrapper .inner_col_3 .review_card{
+  width: 100%;
+}
+.single_blg_pge_sec_2 .r_col_wrapper .inner_col_4 .inner_faq_accordion_wrapper {
+padding: 1rem;
+}
+.single_blg_pge_sec_2 .comments_wrapper .users_profile_col {
+padding-block: 1rem;
+}
+.single_blg_pge_sec_2 .comments_wrapper .inner_small_row{
+  padding-left: 4rem;
+}
+.single_blg_pge_sec_2 .comments_wrapper .user_name_date span:nth-of-type(1) {
+font-size: 1rem;
+}
+.single_blg_pge_sec_2 .reply_heading hr{
+  width: 50%;
+}
+.single_blg_pge_sec_2 .leave_reply_wrapper form {
+padding: 1rem;
+}
+.single_blg_pge_sec_2 .social_link_nd_rating{
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.single_blg_pge_sec_2 .l_col_wrapper{
+  width: 100%;
+  gap: 3rem;
+}
+.single_blg_pge_sec_2 .l_col_wrapper .inner_summary_wrapper{
+  gap: 1rem;
+}
+.single_blg_pge_sec_2 .l_col_wrapper span{
+  font-size: 1rem;
+}
+.single_blg_pge_sec_3 .price{
+  font-size: 1rem;
+}
+.single_blg_pge_sec_3 .feature{
+  font-size: .75rem;
+}
+.single_blg_pge_sec_6 .search_product{
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.single_blg_pge_sec_6 .sub_container {
+width: 100%;
+padding-block: 3rem;
+}
+.single_blg_pge_sec_6 .search_product form{
+  border: 1px solid var(--sub_heading_clr);
+}
+.single_blg_pge_sec_6 .search_product .search_btn{
+  width: 10rem;
+}
 }
