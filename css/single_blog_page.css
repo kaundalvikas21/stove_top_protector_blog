@@ -274,7 +274,7 @@
   .inner_col_3
   .review_card
   .name_stars_wrap
-  span {
+  span a{
   color: #232323;
   padding-bottom: 0.3rem;
   font-size: 1rem;
@@ -351,8 +351,9 @@
 .single_blg_pge_sec_2 .comments_wrapper .profile_info .user_name_date {
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
-.single_blg_pge_sec_2 .comments_wrapper .user_name_date span:nth-of-type(1)  {
+.single_blg_pge_sec_2 .comments_wrapper .user_name_date span:nth-of-type(1) a{
   color: var(--secondary_heading_clr);
   font-size: 1.25rem;
   font-weight: 600;
@@ -534,12 +535,12 @@ td {
   gap: 0.625rem;
   align-items: flex-start;
 }
-.single_blg_pge_sec_4 .user_info .auth_name {
+.single_blg_pge_sec_4 .user_info .auth_name >a{
   color: var(--secondary_heading_clr);
   font-size: 1rem;
   font-weight: 600;
 }
-.single_blg_pge_sec_4 .user_info span {
+.single_blg_pge_sec_4 .user_info span>a {
   color: var(--sub_heading_clr);
   font-size: 0.875rem;
   font-weight: 500;
@@ -656,8 +657,11 @@ padding-block: 1rem;
 .single_blg_pge_sec_2 .comments_wrapper .inner_small_row{
   padding-left: 4rem;
 }
-.single_blg_pge_sec_2 .comments_wrapper .user_name_date span:nth-of-type(1) {
+.single_blg_pge_sec_2 .comments_wrapper .user_name_date span:nth-of-type(1) > a{
 font-size: 1rem;
+}
+.single_blg_pge_sec_2 .comments_wrapper .user_name_date span {
+font-size: .65rem;
 }
 .single_blg_pge_sec_2 .reply_heading hr{
   width: 50%;
@@ -681,11 +685,17 @@ padding: 1rem;
 .single_blg_pge_sec_2 .l_col_wrapper span{
   font-size: 1rem;
 }
+.single_blg_pge_sec_3 .th_heading th{
+  font-size: .75rem;
+}
 .single_blg_pge_sec_3 .price{
   font-size: 1rem;
 }
 .single_blg_pge_sec_3 .feature{
   font-size: .75rem;
+}
+.single_blg_pge_sec_3 tr .learn_more_btn{
+  font-size: .875rem;
 }
 .single_blg_pge_sec_6 .search_product{
   flex-direction: column;

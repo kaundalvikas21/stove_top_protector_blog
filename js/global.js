@@ -36,16 +36,34 @@ overlay.addEventListener("click", () => {
 const rate_article = document.querySelector(".rate_article");
 const model_rating = document.querySelector(".model_rating");
 
-rate_article.addEventListener("click", () => {
-  model_rating.classList.add("open_rating_model");
-  overlay_add();
-});
+// rate_article.addEventListener("click", () => {
+//   model_rating.classList.add("open_rating_model");
+//   overlay_add();
+// });
 
 // Frequently Asked Questions (FAQs)_js
-const accordion_card = document.querySelectorAll(".accordion_card");
+const accordionCards = document.querySelectorAll(".accordion_card");
 
-accordion_card.addEventListener("click", () => {
-  //  accordion_card.classList.toggle("active");
-  console.log("hello");
+accordionCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    // Remove 'active' class from all cards
+    accordionCards.forEach((otherCard) => {
+      otherCard.classList.remove("active");
+   
+    });
+
+    // Add 'active' class to the clicked card
+    card.classList.add("active");
+  });
 });
 
+
+// mobile_filter_btn
+const filterBtn = document.querySelector(".filter_btn");
+const mobile_list_bar = document.querySelector(".mobile_list_bar");
+const arrowDown = document.querySelector(".arrow_down");
+
+filterBtn.addEventListener("click", function () {
+  mobile_list_bar.classList.toggle("active");
+  arrowDown.classList.toggle("rotate");
+});

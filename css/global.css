@@ -362,7 +362,7 @@ h6 {
   font-size: 1rem;
   font-weight: 600;
 }
-.global_blog_posts .blog_author_info span a{
+.global_blog_posts .blog_author_info span a {
   color: var(--secondary_blue_clr);
 }
 .global_blog_posts .blog_author_info span.date {
@@ -377,8 +377,8 @@ h6 {
   justify-content: space-between;
 }
 
-.global_blog_posts .inner_cont_heading > span.l_span,
-.global_blog_posts .inner_cont_heading > span.r_span {
+.global_blog_posts .inner_cont_heading > span.l_span a,
+.global_blog_posts .inner_cont_heading > span.r_span a {
   color: var(--sub_heading_clr);
   text-align: left;
   font-weight: 600;
@@ -391,8 +391,8 @@ h6 {
   font-size: 1.25rem;
 }
 
-.global_blog_posts .grid_blog_card:hover span.l_span,
-.global_blog_posts .grid_blog_card:hover span.r_span {
+.global_blog_posts .grid_blog_card:hover span.l_span a,
+.global_blog_posts .grid_blog_card:hover span.r_span a {
   color: var(--primary_blue_clr);
 }
 .global_blog_posts .inner_cont_heading > a {
@@ -486,18 +486,20 @@ h6 {
 .global_product_reviews .review_card_container {
   justify-content: space-between;
 }
-.global_product_reviews .review_card span.heading_span {
+.global_product_reviews .review_card span.heading_span a{
   color: var(--sub_heading_clr);
   font-size: 1.25rem;
   font-weight: 600;
+  width: 100%;
+  display: contents;
 }
-.global_product_reviews .review_card:hover span.heading_span {
+.global_product_reviews .review_card:hover span.heading_span a{
   color: var(--primary_blue_clr);
 }
-.global_product_reviews .review_card > img {
+.global_product_reviews .review_card > .img_review a {
   transition: filter 0.3s ease;
 }
-.global_product_reviews .review_card:hover > img {
+.global_product_reviews .review_card:hover > .img_review a{
   filter: brightness(80%);
 }
 .global_product_reviews .review_card {
@@ -505,7 +507,9 @@ h6 {
   width: 32%;
   height: auto;
 }
-
+.global_product_reviews .review_card .img_review >a{
+  width: 100%;
+}
 .global_product_reviews .bottom_content {
   gap: 1rem;
   padding-bottom: 0.5rem;
@@ -522,12 +526,13 @@ h6 {
   gap: 0.5rem;
   /* white-space: nowrap; */
 }
-.global_product_reviews .profile_info .user > span {
+.global_product_reviews .profile_info .user > span a {
   color: var(--sub_heading_clr);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
+  display: contents;
 }
-.global_product_reviews .profile_info .user .blue_name {
+.global_product_reviews .profile_info .user .blue_name a{
   color: var(--primary_blue_clr);
 }
 .global_product_reviews .date_info::before {
@@ -642,6 +647,15 @@ h6 {
 .global_recomm_prodct_reviews .drop_down_container .read_cons li:nth-child(2) {
   list-style: none;
 }
+.global_recomm_prodct_reviews .drop_down_container .inner_li_content {
+  margin-top: 1rem;
+}
+.global_recomm_prodct_reviews .drop_down_container .inner_li_content li {
+  margin-left: 1.2rem;
+  color: var(--light_grey_para_clr);
+  font-size: 1rem;
+  padding-block: 0.5rem;
+}
 
 /*----------- global all_about_use_stove_kitchen css ------------*/
 .global_about_ur_stove .about_ur_stove_container {
@@ -711,7 +725,6 @@ h6 {
   padding: 1rem 1.5rem;
 }
 .faq_sec .inner_content {
-  gap: 1rem;
   width: 90%;
 }
 .faq_sec .inner_content span {
@@ -719,20 +732,23 @@ h6 {
   font-size: 1rem;
   font-weight: 600;
 }
-.faq_sec .inner_content .faq_para p {
+.faq_sec .inner_content .faq_content p {
   color: var(--light_grey_para_clr);
 }
-/* .faq_sec .faq_para{
+.faq_sec .accordion_card .faq_content{
   max-height: 0;
   overflow: hidden;
-} */
-/* .faq_sec .accordion_card.active .faq_para{
+  padding-top: 0rem;
+}
+.faq_sec .accordion_card.active .faq_content{
   max-height: 300px;
-} */
+  padding-top: 1rem;
+}
 .faq_sec .faq_container > a {
   width: 8rem;
   height: 3rem;
 }
+
 /*-------- global_faq_sec end --------*/
 
 /*------------------ footer css -------------------*/
@@ -771,6 +787,13 @@ footer > .inner_container .inner_li_columns_wrap .col_1:nth-child(2) {
 footer > .inner_container .col_1 h5 {
   color: var(--solid_white_clr);
   letter-spacing: 0.06em;
+  font-weight: 500;
+}
+footer > .inner_container .col_1 span {
+  color: var(--solid_white_clr);
+  letter-spacing: 0.06em;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 footer > .inner_container .col_1 p {
@@ -872,7 +895,7 @@ footer > .copyright_col {
     padding: 1rem 1rem;
   }
   p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 
@@ -907,7 +930,7 @@ footer > .copyright_col {
   }
 
   .breadcrumb_container {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   header .header_container {
@@ -936,12 +959,36 @@ footer > .copyright_col {
   }
   .global_blog_posts .grid_blog_card {
     width: 100%;
+    height: auto;
+    gap: 1rem;
   }
-  .global_blog_posts .grid_blog_card img {
+  /* .global_blog_posts .grid_blog_card:nth-of-type(1)> a > img{
     width: 100%;
+  } */
+  .global_blog_posts .grid_blog_card > a >img{
+    /* width: 155px; */
+    height: 160px;
+    width: 100%;
+  }
+
+  .global_blog_posts .drp_btns{
+    flex-wrap: wrap;
   }
   .global_blog_posts .recent_blog_container > a {
     margin-top: 0;
+  }
+  .global_blog_posts .inner_cont_heading > span.l_span a {
+    font-size: 1rem;
+  }
+  .global_blog_posts .blog_author_info span a,
+  .global_blog_posts .inner_content p {
+    font-size: 0.75rem;
+  }
+  .global_blog_posts .inner_cont_heading > span.r_span a {
+    font-size: 0.875rem;
+  }
+  .global_blog_posts .inner_content {
+    gap: 0.5rem;
   }
 
   /* global_component  index_section_4 start */
@@ -953,6 +1000,9 @@ footer > .copyright_col {
     width: 100%;
     gap: 1rem;
   }
+  .global_protect_gas_stove .right_content p {
+    font-size: 1rem;
+  }
   /* global_component (product_reviews_card) index_section_5  */
   .global_product_reviews .review_card_container {
     flex-direction: column;
@@ -963,6 +1013,20 @@ footer > .copyright_col {
   }
   .global_product_reviews .profile_info {
     width: 100%;
+  }
+  .global_product_reviews .review_card span.heading_span{
+    font-size: 1rem;
+  }
+  .global_product_reviews .bottom_content p {
+    font-size: 1rem;
+  }
+  .global_product_reviews .profile_info .user > span a ,
+  .global_product_reviews .profile_info .user .blue_name a,
+  .global_product_reviews .shares_view > span{
+  font-size: .875rem;
+  }
+  .global_product_reviews .user, .date_info, .shares_view {
+  gap: .3rem;
   }
 
   /* global_component (Recommended_products) index_section_6 */
@@ -988,7 +1052,14 @@ footer > .copyright_col {
   .global_about_ur_stove .subscribe_bar {
     width: 100%;
   }
-
+/* faq */
+  .faq_sec .faq_container {
+    gap: 2.5rem;
+  }
+  .faq_sec .inner_content span {
+    font-size: 14px;
+  }
+/* mobile footer */
   footer > .inner_container {
     display: none;
   }
@@ -997,6 +1068,7 @@ footer > .copyright_col {
     display: flex;
     gap: 3rem;
     margin-bottom: 3rem;
+    padding-top: 3rem;
   }
   .mobile_footer .col_1 {
     gap: 1rem;
@@ -1004,10 +1076,16 @@ footer > .copyright_col {
   .mobile_footer .col_1 h5 {
     color: var(--solid_white_clr);
     font-weight: 500;
+    font-size: 1.25rem;
   }
+
+  .mobile_footer .col_1 span {
+    color: var(--solid_white_clr);
+    font-size: 1.25rem;
+  }
+
   .mobile_footer .col_1 p {
     color: var(--solid_white_clr);
-    font-size: 0.75rem;
   }
   .mobile_footer .social_icons_container svg {
     width: 18px;
@@ -1042,10 +1120,5 @@ footer > .copyright_col {
     height: 20px;
   }
 
-  .faq_sec .faq_container{
-    gap: 2.5rem;
-  }
-  .faq_sec .inner_content span {
-  font-size: 14px;
-  }
+  
 }
