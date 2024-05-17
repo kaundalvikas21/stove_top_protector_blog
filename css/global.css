@@ -197,12 +197,6 @@ h6 {
   height: 24px;
 }
 
-.header_container h5 {
-  color: var(--secondary_blue_clr);
-  font-weight: 700;
-  font-family: "lato";
-}
-
 /* menu_off_canvas_css */
 .menu_off_canvas {
   width: 468px;
@@ -626,35 +620,42 @@ h6 {
   width: 10rem;
   height: 3rem;
 }
-.global_recomm_prodct_reviews .drop_down_container .read_pros,
-.global_recomm_prodct_reviews .drop_down_container .read_cons {
+.global_recomm_prodct_reviews .accordion_card .read_pros,
+.global_recomm_prodct_reviews .accordion_card .read_cons {
   align-items: center;
   width: 90%;
   justify-content: space-between;
 }
-.global_recomm_prodct_reviews .drop_down_container {
-  border-bottom: 1px solid #0000001a;
+.global_recomm_prodct_reviews .accordion_card {
+  border-bottom: 1px solid #0000001a!important;
   padding-bottom: 1.125rem;
 }
-.global_recomm_prodct_reviews .drop_down_container .read_pros > li,
-.global_recomm_prodct_reviews .drop_down_container .read_cons > li {
+.global_recomm_prodct_reviews .accordion_card .read_pros > li,
+.global_recomm_prodct_reviews .accordion_card .read_cons > li {
   color: var(--blue_heading_clr);
   font-size: 1rem;
   font-weight: 400;
   margin-left: 1.2rem;
 }
-.global_recomm_prodct_reviews .drop_down_container .read_pros li:nth-child(2),
-.global_recomm_prodct_reviews .drop_down_container .read_cons li:nth-child(2) {
+.global_recomm_prodct_reviews .accordion_card .read_pros li:nth-child(2),
+.global_recomm_prodct_reviews .accordion_card .read_cons li:nth-child(2) {
   list-style: none;
 }
-.global_recomm_prodct_reviews .drop_down_container .inner_li_content {
-  margin-top: 1rem;
-}
-.global_recomm_prodct_reviews .drop_down_container .inner_li_content li {
+.global_recomm_prodct_reviews .accordion_card .faq_content li {
   margin-left: 1.2rem;
   color: var(--light_grey_para_clr);
   font-size: 1rem;
   padding-block: 0.5rem;
+}
+.global_recomm_prodct_reviews .faq_sec{
+  background: none;
+}
+.global_recomm_prodct_reviews .faq_sec .accordion_card{
+ border: none;
+ background: none!important;
+}
+.global_recomm_prodct_reviews .accordion_card.active .rotate_180{
+  transform: rotate(180deg);
 }
 
 /*----------- global all_about_use_stove_kitchen css ------------*/
@@ -739,16 +740,24 @@ h6 {
   max-height: 0;
   overflow: hidden;
   padding-top: 0rem;
+  transition: max-height 0.4s ease, padding 0.3s ease;
 }
 .faq_sec .accordion_card.active .faq_content{
-  max-height: 300px;
+  max-height: 1000px;
   padding-top: 1rem;
 }
 .faq_sec .faq_container > a {
   width: 8rem;
   height: 3rem;
 }
+.faq_sec .accordion_card .cross_x {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
 
+.faq_sec .accordion_card.active .cross_x {
+  transform: rotate(45deg);
+}
 /*-------- global_faq_sec end --------*/
 
 /*------------------ footer css -------------------*/
@@ -846,47 +855,6 @@ footer > .copyright_col {
   display: none;
 }
 
-/*----- model_rating -----*/
-.model_rating {
-  width: 500px;
-  background-color: #fff8f5;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease-in-out;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1002;
-}
-.model_rating.open_rating_model {
-  opacity: 1;
-  visibility: visible;
-}
-.model_rating .model_wrapper {
-  max-width: 200px;
-  width: 100%;
-  margin-inline: auto;
-  padding-block: 3.5rem;
-}
-.model_rating .model_content {
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.model_rating .model_content h6 {
-  color: var(--secondary_blue_clr);
-  font-weight: 400;
-}
-.model_rating .model_content span {
-  color: var(--light_grey_para_clr);
-  font-weight: 400;
-}
-.model_rating .social_links_model {
-  align-items: center;
-  gap: 0.5rem;
-}
-
 @media screen and (max-width: 480px) {
   section {
     margin-bottom: 4rem;
@@ -944,12 +912,28 @@ footer > .copyright_col {
     height: 5rem;
     position: relative;
   }
-  .mobile_header h5 {
-    color: var(--secondary_blue_clr);
-    font-weight: 700;
-    font-family: "lato";
+  .menu_off_canvas .lists_stove_protect ul li a {
+  font-size: 1rem;
   }
-
+  .menu_off_canvas {
+    width: 240px;
+    height: 100vh;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--solid_white_clr);
+    padding: 2rem 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out; /* Changed to ease-in-out for a smoother effect */
+    z-index: 1003;
+  }
+  
+  .menu_off_canvas.open {
+    transform: translateX(0);
+  }
+  
+  
   /* global_component index_section_3 start */
   .global_blog_posts .inner_blog_wrapper {
     grid-template-columns: 1fr;
@@ -1078,14 +1062,13 @@ footer > .copyright_col {
     font-weight: 500;
     font-size: 1.25rem;
   }
-
-  .mobile_footer .col_1 span {
-    color: var(--solid_white_clr);
-    font-size: 1.25rem;
-  }
-
   .mobile_footer .col_1 p {
     color: var(--solid_white_clr);
+  }
+
+  .mobile_footer .accordion_card span {
+    color: var(--solid_white_clr);
+    font-size: 1.25rem;
   }
   .mobile_footer .social_icons_container svg {
     width: 18px;
@@ -1097,6 +1080,7 @@ footer > .copyright_col {
 
   .mobile_footer .inner_li_columns_wrap {
     gap: 1rem;
+    background: none;
   }
   .mobile_footer .li_column ul li {
     list-style: none;
@@ -1107,18 +1091,28 @@ footer > .copyright_col {
     font-size: 0.75rem;
     font-weight: 400;
   }
-  .mobile_footer .inner_li_columns_wrap .col_1 {
+  .mobile_footer .inner_li_columns_wrap .accordion_card {
     border-bottom: 1px solid var(--solid_white_clr);
     padding-bottom: 1rem;
+    padding-top: 0;
   }
   .accordion_footer {
     align-items: center;
     justify-content: space-between;
+    padding-block: .5rem;
   }
   .accordion_footer img {
     width: 20px;
     height: 20px;
+    transform: rotate(180deg);
   }
-
-  
+  .mobile_footer .accordion_card{
+  background: none;
+  border: none;
+  align-items: normal;
+  padding-inline: 0;
+}
+.mobile_footer .accordion_card.active .rotate_180{
+  transform: rotate(0deg);
+}
 }

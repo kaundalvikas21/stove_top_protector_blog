@@ -1,13 +1,16 @@
 const menu_off_canvas = document.querySelector(".menu_off_canvas");
 const close_btn = document.querySelector(".close_btn");
-const hamburger_btn = document.querySelector(".hamburger_btn");
+const hamburger_btn = document.querySelectorAll(".hamburger_btn");
 const overlay = document.querySelector(".overlay");
 
 //menu_off_canvas_js
-hamburger_btn.addEventListener("click", () => {
-  menu_off_canvas.classList.add("open");
-  overlay_add();
-});
+hamburger_btn.forEach(btn=>{
+  btn.addEventListener("click", () => {
+    menu_off_canvas.classList.add("open");
+    overlay_add();
+  });
+})
+
 
 close_btn.addEventListener("click", () => {
   menu_off_canvas.classList.remove("open");
@@ -67,3 +70,4 @@ filterBtn.addEventListener("click", function () {
   mobile_list_bar.classList.toggle("active");
   arrowDown.classList.toggle("rotate");
 });
+
