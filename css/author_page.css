@@ -206,7 +206,8 @@
   .author_pg_sec_2 .heading_wrap span:nth-child(even),
   .author_pg_sec_2 .heading_wrap span:nth-child(odd),
   .author_pg_sec_3 .heading_wrap span:nth-child(1),
-  .author_pg_sec_3 .heading_wrap span:nth-child(2) {
+  .author_pg_sec_3 .heading_wrap span:nth-child(2),
+  .author_pg_sec_3 .heading_wrap span:nth-child(3) {
     font-size: 1rem;
   }
   .author_pg_sec_1 .author_profile_wrapper .author_img img {
@@ -221,7 +222,8 @@
   .author_pg_sec_1 .other_article_wrap span {
     font-size: 1rem;
   }
-  .author_pg_sec_1 .inner_list ul li{
+  .author_pg_sec_1 .inner_list ul li,
+  .author_pg_sec_1 .inner_article_list ul li {
     font-size: .75rem;
   }
   .author_pg_sec_2 .heading_wrap,
@@ -232,10 +234,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .author_pg_sec_2 .heading_wrap span::before {
-    left: 15%;
+    /* left: 20%; */
+    left: 4rem;
   }
   .author_pg_sec_3 .heading_wrap span::before {
-    left: 35%;
+    /* left: 45%; */
+left: 10rem;
   }
   .author_pg_sec_3 .inner_cont_wrapper {
     flex-direction: column;
@@ -247,4 +251,8 @@
   .author_pg_sec_3 .inner_cont_wrapper .r_col {
     width: 100%;
   }
+  .author_pg_sec_3 .inner_cont_wrapper .r_col > span {
+  font-size: .875rem;
+  }
+  
 }

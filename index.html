@@ -7,6 +7,7 @@
     <title>Home_page</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
@@ -21,10 +22,10 @@
                 <a href=""> <img src="assets/instagram-line.svg" alt=""></a>
             </div>
             <a href="index.html">
-              <img src="assets/logo_Stove Top Protector Blog.svg" alt="">
+                <img src="assets/logo_Stove Top Protector Blog.svg" alt="">
             </a>
             <div class="menu_icons flex_row">
-                <a href=""> <img src="assets/search.svg" alt=""></a>
+                <img class="search_icon" src="assets/search.svg" alt="">
                 <a href=""> <img src="assets/user_header.svg" alt=""></a>
                 <img class="hamburger_btn" src="assets/menu_btn.svg" alt="">
             </div>
@@ -37,7 +38,7 @@
             <a href="index.html">
                 <img src="assets/logo_Stove Top Protector Blog.svg" alt="">
             </a>
-            <a href=""> <img src="assets/search.svg" alt=""></a>
+            <img class="search_icon w_auto" src="assets/search.svg" alt="">
 
         </div>
 
@@ -69,6 +70,12 @@
                 </div>
             </div>
 
+        </div>
+
+        <!-- search_bar -->
+        <div class="search_bar">
+            <input type="text" class="input_search" placeholder="Type to Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
         <div class="overlay"></div>
@@ -329,7 +336,7 @@
                     <!-- card-1 -->
                     <div class="review_card flex_column">
                         <div class="img_review">
-                            <a href=""> <img  src="assets/product_1.png" alt=""></a>
+                            <a href="single_blog_page.html"> <img src="assets/product_1.png" alt=""></a>
                         </div>
                         <div class="bottom_content flex_column">
                             <div class="global_stars_rating flex_row">
@@ -508,31 +515,31 @@
                             <a class="blue_btn global_btn">Read Reviews</a>
                         </div>
 
-                     <div class="faq_sec">
-                        <div class="accordion_card">
-                            <ul class="read_pros flex_row">
-                                <li>Read Pros :</li>
-                                <li><img class="w_auto rotate_180" src="assets/down_arrow.svg" alt=""></li>
-                            </ul>
-                            <ul class="faq_content">
-                                <li>Reduces the risk of kitchen fires</li>
-                                <li>Reduces the risk of kitchen fires</li>
-                                <li>Reduces the risk of kitchen fires</li>
-                                <li>Reduces the risk of kitchen fires</li>
-                            </ul>
-                        </div>
+                        <div class="faq_sec">
+                            <div class="accordion_card">
+                                <ul class="read_pros flex_row">
+                                    <li>Read Pros :</li>
+                                    <li><img class="w_auto rotate_180" src="assets/down_arrow.svg" alt=""></li>
+                                </ul>
+                                <ul class="faq_content">
+                                    <li>Reduces the risk of kitchen fires</li>
+                                    <li>Reduces the risk of kitchen fires</li>
+                                    <li>Reduces the risk of kitchen fires</li>
+                                    <li>Reduces the risk of kitchen fires</li>
+                                </ul>
+                            </div>
 
-                        <div class="accordion_card">
-                            <ul class="read_cons flex_row">
-                                <li>Read Cons :</li>
-                                <li> <img class="w_auto rotate_180" src="assets/down_arrow.svg" alt=""></li>
-                            </ul>
-                            <ul class="faq_content">
-                                <li>Reduces the risk of kitchen fires</li>
-                                <li>Reduces the risk of kitchen fires</li>
-                            </ul>
+                            <div class="accordion_card">
+                                <ul class="read_cons flex_row">
+                                    <li>Read Cons :</li>
+                                    <li> <img class="w_auto rotate_180" src="assets/down_arrow.svg" alt=""></li>
+                                </ul>
+                                <ul class="faq_content">
+                                    <li>Reduces the risk of kitchen fires</li>
+                                    <li>Reduces the risk of kitchen fires</li>
+                                </ul>
+                            </div>
                         </div>
-                     </div>
 
                     </div>
                     <!-- right content -->
@@ -685,8 +692,7 @@
 
                 <div class="social_icons_container  flex_row">
                     <a href="">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_484_1281)">
                                 <path
                                     d="M24.3203 12.8567C24.3203 6.21613 18.9443 0.82666 12.3203 0.82666C5.69631 0.82666 0.320312 6.21613 0.320312 12.8567C0.320312 18.6793 4.44831 23.5274 9.92031 24.6462V16.4658H7.52031V12.8567H9.92031V9.84922C9.92031 7.52741 11.8043 5.63869 14.1203 5.63869H17.1203V9.24771H14.7203C14.0603 9.24771 13.5203 9.78907 13.5203 10.4507V12.8567H17.1203V16.4658H13.5203V24.8267C19.5803 24.2252 24.3203 19.1003 24.3203 12.8567Z"
