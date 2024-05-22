@@ -117,6 +117,9 @@
   .blog_page_sec_1 .blog_card_wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  .blog_page_sec_1 .blog_sec_1_container {
+  gap: 1.5rem;
+  }
   .mobile_filter .filter_btn {
     width: 88px;
     height: 36px;

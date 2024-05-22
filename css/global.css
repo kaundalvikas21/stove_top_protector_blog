@@ -44,7 +44,7 @@ html {
   scroll-behavior: smooth;
 }
 main {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .container_1440 {
@@ -118,6 +118,16 @@ h5 {
 h6 {
   font-size: 1rem;
   font-weight: 600;
+}
+
+.text_underline_bar::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  bottom: -14%;
+  left: 0;
+  position: absolute;
 }
 
 .global_btn {
@@ -303,7 +313,7 @@ h6 {
 .breadcrumb_container {
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .breadcrumb_container .breadcrumb {
   display: flex;
@@ -330,9 +340,7 @@ h6 {
 .global_blog_posts .recent_blog_container h3 {
   text-align: center;
   color: var(--primary_heading_clr);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-skip-ink: none;
+  position: relative;
 }
 
 .global_blog_posts .inner_blog_wrapper {
@@ -499,11 +507,9 @@ h6 {
   align-items: center;
 }
 .global_product_reviews .product_review_container h3 {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-skip-ink: none;
   color: var(--primary_heading_clr);
   text-align: center;
+  position: relative;
 }
 .global_product_reviews .review_card_container {
   justify-content: space-between;
@@ -594,9 +600,9 @@ h6 {
   gap: 3rem;
 }
 .global_recomm_prodct_reviews .recomm_prodct_container h3 {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
   color: var(--primary_heading_clr);
+  position: relative;
+  width: fit-content;
 }
 .global_recomm_prodct_reviews .inner_col_container {
   justify-content: space-between;
@@ -732,16 +738,14 @@ h6 {
   padding-block: 5rem;
 }
 .faq_sec .faq_container h3 {
-  width: 100%;
   text-align: center;
   color: var(--primary_heading_clr);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-skip-ink: none;
+  position: relative;
 }
 .faq_sec .inner_faq_accordion_wrapper {
   gap: 2rem;
   max-width: 920px;
+  width: 100%;
   align-items: center;
   margin-inline: auto;
 }
@@ -886,10 +890,10 @@ footer > .copyright_col {
 
 @media screen and (max-width: 480px) {
   section {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   .container_1440 {
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
   }
   p {
     font-size: 0.75rem;
@@ -907,7 +911,7 @@ footer > .copyright_col {
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 500;
   }
 
@@ -924,10 +928,6 @@ footer > .copyright_col {
   h6 {
     font-size: 0.75rem;
     font-weight: 600;
-  }
-
-  .breadcrumb_container {
-    margin-bottom: 3rem;
   }
 
   header .header_container {
@@ -1006,7 +1006,7 @@ footer > .copyright_col {
   /* global_component  index_section_4 start */
   .global_protect_gas_stove .inner_content_col {
     flex-direction: column;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
   }
   .global_protect_gas_stove .right_content {
     width: 100%;
@@ -1060,7 +1060,6 @@ footer > .copyright_col {
   /* global_component (all about_use_stove) index_section_7  */
   .global_about_ur_stove .about_ur_stove_container {
     flex-direction: column;
-    gap: 3rem;
   }
   .global_about_ur_stove .l_content,
   .global_about_ur_stove .subscribe_bar {
@@ -1081,7 +1080,7 @@ footer > .copyright_col {
 
   .mobile_footer {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     margin-bottom: 3rem;
     padding-top: 3rem;
   }
