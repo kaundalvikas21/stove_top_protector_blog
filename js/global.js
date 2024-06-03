@@ -1,5 +1,5 @@
 const menu_off_canvas = document.querySelector(".menu_off_canvas");
-const close_btn = document.querySelector(".close_btn");
+const close_btn = document.querySelectorAll(".close_btn");
 const hamburger_btn = document.querySelectorAll(".hamburger_btn");
 const overlay = document.querySelector(".overlay");
 
@@ -11,10 +11,14 @@ hamburger_btn.forEach((btn) => {
   });
 });
 
-close_btn.addEventListener("click", () => {
-  menu_off_canvas.classList.remove("open");
-  overlay_remove();
+close_btn.forEach((cls_btn)=>{
+  cls_btn.addEventListener("click", () => {
+    menu_off_canvas.classList.remove("open");
+    search_bar.classList.remove("open_bar");
+    overlay_remove();
+  });
 });
+
 
 // functions_overlay
 function overlay_add() {
