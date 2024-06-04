@@ -51,7 +51,6 @@ if (rate_article && model_rating) {
 
 // Frequently Asked Questions (FAQs)_js
 const accordionCards = document.querySelectorAll(".accordion_card");
-
 accordionCards.forEach((card) => {
   card.addEventListener("click", () => {
     //  Check if the clicked card is already active
@@ -71,7 +70,6 @@ accordionCards.forEach((card) => {
 });
 
 // mobile_filter_btn
-
 const filterBtn = document.querySelector(".filter_btn");
 const mobile_list_bar = document.querySelector(".mobile_list_bar");
 const arrowDown = document.querySelector(".arrow_down");
