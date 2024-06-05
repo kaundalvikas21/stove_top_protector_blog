@@ -623,7 +623,8 @@ td {
   background-size: cover;
 }
 .single_blg_pge_sec_6 .sub_container {
-  width: 34%;
+  max-width: 640px;
+  width: 100%;
   height: auto;
   margin: auto;
   gap: 1.5rem;
@@ -634,35 +635,39 @@ td {
   color: var(--secondary_blue_clr);
   text-align: center;
 }
-.single_blg_pge_sec_6 .search_product {
-  justify-content: space-between;
-  width: 100%;
-}
-.single_blg_pge_sec_6 .search_product form {
-  display: flex;
+
+.single_blg_pge_sec_6  form {
   align-items: center;
-  border: 1px solid var(--sub_heading_clr);
-  border-right: none;
-  width: 88%;
-  padding: 0.4rem 1.5rem;
+  width: 100%;
 }
 .single_blg_pge_sec_6 form img {
   width: 20px;
   height: 20px;
 }
-.single_blg_pge_sec_6 input {
+.single_blg_pge_sec_6  form .l_content{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--sub_heading_clr);
+  padding: 1rem;
+  border-right: none;
+  gap: .5rem;
+  width: 100%;
+}
+.single_blg_pge_sec_6  form .l_content input{
   background-color: transparent;
-  padding: 0.5rem;
   outline: none;
   border: none;
-  width: 230px;
   color: var(--sub_heading_clr);
   font-size: 0.875rem;
   font-weight: 300;
+  width: 90%;
 }
-.single_blg_pge_sec_6 .search_product .search_btn {
-  width: 7rem;
-  height: 3rem;
+.single_blg_pge_sec_6  form >a{
+  padding-left: 1rem;
+}
+
+.single_blg_pge_sec_6 form> .search_btn{
+ padding: 20px 30px;
 }
 .single_blg_pge_sec_6 .need_help {
   align-items: center;
@@ -673,6 +678,8 @@ td {
 .single_blg_pge_sec_6 .need_help span {
   color: var(--sub_heading_clr);
 }
+
+
 
 @media screen and (max-width: 480px) {
   .single_blg_pge_sec_2 .sec_2_container {
@@ -777,19 +784,20 @@ td {
   .single_blg_pge_sec_3 tr td:last-child {
     transform: translateY(10%);
   }
-  .single_blg_pge_sec_6 .search_product {
+  .single_blg_pge_sec_6 form {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: 0 3rem;
   }
   .single_blg_pge_sec_6 .sub_container {
     width: 100%;
-    padding-block: 3rem;
+    padding-block: 2rem;
   }
-  .single_blg_pge_sec_6 .search_product form {
-    border: 1px solid var(--sub_heading_clr);
+  .single_blg_pge_sec_6 form .l_content{
+    border-right: 1px solid var(--sub_heading_clr);
   }
-  .single_blg_pge_sec_6 .search_product .search_btn {
-    width: 10rem;
-  }
+  /* .single_blg_pge_sec_6 form> .search_btn {
+   
+  } */
 }
