@@ -2,6 +2,7 @@
   color: var(--sub_heading_clr);
   font-size: 0.875rem;
 }
+
 .contact_us_sec .contact_us_container {
   gap: 3rem;
   max-width: 1017px;
