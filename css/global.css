@@ -834,7 +834,7 @@ footer > .inner_container .inner_li_columns_wrap .col_1:nth-child(2) {
   max-width: max-content;
 }
 
-footer > .inner_container .col_1 h5 {
+footer > .inner_container .col_1 h5 > a{
   color: var(--solid_white_clr);
   letter-spacing: 0.06em;
   font-weight: 500;
@@ -1095,6 +1095,7 @@ footer > .copyright_col {
   .author_pg_sec_3 .l_col .inner_content a {
     font-size: 0.875rem;
   }
+  
   /* mobile footer */
   footer > .inner_container {
     display: none;
@@ -1109,7 +1110,7 @@ footer > .copyright_col {
   .mobile_footer .col_1 {
     gap: 1rem;
   }
-  .mobile_footer .col_1 h5 {
+  .mobile_footer .col_1 h5 >a {
     color: var(--solid_white_clr);
     font-weight: 500;
     font-size: 1.25rem;
