@@ -972,7 +972,8 @@ footer > .copyright_col {
     width: 100%;
     display: none;
   }
-  .overlay.open_overlay{
+
+  .overlay .open_overlay{
     display: none;
   }
   .search_bar.open_bar {

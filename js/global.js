@@ -7,11 +7,11 @@ const overlay = document.querySelector(".overlay");
 hamburger_btn.forEach((btn) => {
   btn.addEventListener("click", () => {
     menu_off_canvas.classList.add("open");
-    overlay_add();
+    overlay_add()
   });
 });
 
-close_btn.forEach((cls_btn)=>{
+close_btn.forEach((cls_btn) => {
   cls_btn.addEventListener("click", () => {
     menu_off_canvas.classList.remove("open");
     search_bar.classList.remove("open_bar");

@@ -667,7 +667,7 @@ td {
 }
 
 .single_blg_pge_sec_6 form> .search_btn{
- padding: 20px 30px;
+ padding: 18px 30px;
 }
 .single_blg_pge_sec_6 .need_help {
   align-items: center;
@@ -788,7 +788,7 @@ td {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
   .single_blg_pge_sec_6 .sub_container {
     width: 100%;
