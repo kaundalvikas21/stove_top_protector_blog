@@ -642,7 +642,7 @@ h6 {
   color: #5562f180;
 }
 .global_recomm_prodct_reviews .price_container .cross_price::after {
-  content: url("/assets/cross_line3.svg");
+  content: url("../assets/cross_line3.svg");
   position: absolute;
   left: 0;
 }
